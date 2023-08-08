@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Página principal -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de tarefas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='tarefa.js'></script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel='stylesheet' type='text/css' media='screen' href='tarefas.css'>
+    </head>
+
+<body>
+ <h1>Adicione Tarefa</h1>
+    <div class="container">
+        <label id="Tarefa">Tarefa:</label>
+        <input class="form-control" id="tarefa" type="text">
+
+        <label id="dia">Dia:</label><br>
+        <input  id="data" type="date"><br>
+
+        <br>
+        <button  class="btn btn-outline-dark"  type="button" onclick="salvarUser()">Salvar</button>
+
+        
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-striped" id="tabela">
+            <tr>
+                <th>TAREFA:</th>
+                <th>ALTERAÇÕES:</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
